@@ -9,8 +9,9 @@ def hello_world():
 @app.route("/event", methods=["POST"])
 def handle_event():
     app.logger.debug("[/event] Event received")
-
     req = request.get_json()
     print(json.dumps(req, indent=4))
+
+    # Implement your processing logic here!
 
     return json.jsonify({ 'success': True })
