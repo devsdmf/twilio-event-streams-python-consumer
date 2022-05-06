@@ -1,0 +1,4 @@
+__pycache__
+.venv/
+kinesis-consumer/twilio-sink.json
+
